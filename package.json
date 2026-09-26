@@ -1,0 +1,21 @@
+{
+  "name": "kylor",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Kylor local AI brain, chatbot and training system",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node server/server.js",
+    "check": "node --check server/server.js",
+    "test": "node server/tests/brain-test.js",
+    "test:brain": "node server/tests/brain-test.js",
+    "test:validator": "node server/tests/validator-test.js",
+    "test:live": "node server/tests/live-brain-test.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0"
+  }
+}

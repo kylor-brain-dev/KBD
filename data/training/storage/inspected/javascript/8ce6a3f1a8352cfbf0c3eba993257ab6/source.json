@@ -1,0 +1,19 @@
+{
+  "id": "8ce6a3f1a8352cfbf0c3eba993257ab6",
+  "subject": "javascript",
+  "topic": "fundamentals",
+  "title": "JavaScript Tutorial - W3Schools",
+  "url": "https://www.w3schools.com/Js/",
+  "checksum": "ac0d753982419e368cc3225ed2b137e4489391a602d52d868b86b3df4ac9481b",
+  "contentLength": 16092,
+  "stage": "inspected",
+  "createdAt": "2026-09-25T19:27:01.129Z",
+  "updatedAt": "2026-09-25T19:27:01.131Z",
+  "metadata": {
+    "domain": "",
+    "sourceId": null,
+    "targetId": "javascript-fundamentals-1",
+    "discoveredAt": null,
+    "fetchedAt": "2026-09-25T19:27:01.129Z"
+  }
+}

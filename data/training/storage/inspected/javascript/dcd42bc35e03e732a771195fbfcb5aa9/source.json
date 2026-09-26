@@ -1,0 +1,19 @@
+{
+  "id": "dcd42bc35e03e732a771195fbfcb5aa9",
+  "subject": "javascript",
+  "topic": "fundamentals",
+  "title": "JavaScript Fundamentals",
+  "url": "https://javascript.info/first-steps",
+  "checksum": "3f062c42d2bd43fb35a619d0e349db4af42a784fd7a58ca744f44068b4bdd57c",
+  "contentLength": 1710,
+  "stage": "inspected",
+  "createdAt": "2026-09-25T19:27:01.129Z",
+  "updatedAt": "2026-09-25T19:27:01.131Z",
+  "metadata": {
+    "domain": "",
+    "sourceId": null,
+    "targetId": "javascript-fundamentals-1",
+    "discoveredAt": null,
+    "fetchedAt": "2026-09-25T19:27:01.129Z"
+  }
+}

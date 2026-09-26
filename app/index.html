@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kylor</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- MAIN DASHBOARD -->
+  <section id="homeView" class="view active">
+    <header class="home-header">
+      <div class="brand">
+        <div class="brand-mark">K</div>
+        <div>
+          <div class="brand-name">Kylor</div>
+          <div class="brand-sub">Brain Development</div>
+        </div>
+      </div>
+    </header>
+
+    <main class="home-main">
+      <div class="home-intro">
+        <div class="eyebrow">LOCAL AI SYSTEM</div>
+        <h1>Build a smarter<br><span>brain.</span></h1>
+        <p>
+          Train Kylor, expand its knowledge and watch its capabilities develop
+          in real time.
+        </p>
+      </div>
+
+      <button id="openTraining" class="training-launch">
+        <div class="launch-icon">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <circle cx="32" cy="32" r="20"/>
+            <path d="M22 32h20M32 22v20"/>
+            <circle cx="32" cy="32" r="27"/>
+          </svg>
+        </div>
+
+        <div class="launch-copy">
+          <strong>Training</strong>
+          <span>Open Kylor's training workspace</span>
+        </div>
+
+        <div class="launch-arrow">→</div>
+      </button>
+    </main>
+
+    <footer class="home-footer">
+      <span>KYLOR 1.0</span>
+      <span>LOCAL INTELLIGENCE SYSTEM</span>
+    </footer>
+  </section>
+
+
+  <!-- TRAINING APPLICATION -->
+  <section id="trainingView" class="training-shell">
+
+    <aside class="training-sidebar">
+
+      <div class="training-brand">
+        <button id="backHome" class="back-button" aria-label="Back">
+          ←
+        </button>
+
+        <div class="mini-mark">K</div>
+
+        <div>
+          <strong>Kylor</strong>
+          <span>Training</span>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <span class="sidebar-label">WORKSPACE</span>
+
+        <button class="nav-item active" data-page="general">
+          <span class="nav-icon">◉</span>
+          General
+        </button>
+
+        <button class="nav-item" data-page="overview">
+          <span class="nav-icon">⌂</span>
+          Overview
+        </button>
+
+        <button class="nav-item" data-page="subjects">
+          <span class="nav-icon">◌</span>
+          Subjects
+        </button>
+
+        <button class="nav-item" data-page="knowledge">
+          <span class="nav-icon">◇</span>
+          Knowledge
+        </button>
+
+        <button class="nav-item" data-page="progress">
+          <span class="nav-icon">⌁</span>
+          Progress
+        </button>
+
+        <button class="nav-item" data-page="runtime">
+          <span class="nav-icon">◷</span>
+          Runtime
+        </button>
+      </div>
+
+      <div class="sidebar-bottom">
+        <div class="sidebar-status">
+          <span class="status-dot"></span>
+          <div>
+            <strong id="sidebarStatus">Ready</strong>
+            <small>Local training engine</small>
+          </div>
+        </div>
+
+        <button id="themeToggle" class="theme-toggle">
+          <span>☾</span>
+          <span>Dark mode</span>
+        </button>
+      </div>
+
+    </aside>
+
+
+    <main class="training-main">
+
+      <header class="training-topbar">
+        <div>
+          <div class="page-kicker">TRAINING WORKSPACE</div>
+          <h1 id="pageTitle">General</h1>
+        </div>
+
+        <div class="top-runtime">
+          <span class="runtime-dot"></span>
+          <span id="topRuntime">00:00:00</span>
+        </div>
+      </header>
+
+
+      <!-- GENERAL -->
+      <section class="training-page active" data-content="general">
+
+        <div class="general-hero">
+          <div>
+            <div class="page-kicker">CORE KNOWLEDGE</div>
+            <h2>General training</h2>
+            <p>
+              Build the broad knowledge layer Kylor needs to understand people,
+              subjects, language and real-world requests.
+            </p>
+          </div>
+
+          <div class="general-symbol">
+            <svg viewBox="0 0 120 120">
+              <circle cx="60" cy="60" r="42"/>
+              <circle cx="60" cy="60" r="18"/>
+              <path d="M60 18v18M60 84v18M18 60h18M84 60h18"/>
+              <path d="M31 31l13 13M76 76l13 13M89 31L76 44M44 76L31 89"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="general-grid">
+
+          <article class="feature-card large">
+            <div class="card-head">
+              <div>
+                <span class="card-kicker">CURRENT TARGET</span>
+                <h3 id="generalTarget">General knowledge foundations</h3>
+              </div>
+              <span id="generalTargetStatus" class="pill">READY</span>
+            </div>
+
+            <p id="generalTargetDescription">
+              Kylor will develop broad background knowledge that supports
+              coding, research, education and website creation.
+            </p>
+
+            <div class="target-progress">
+              <div class="progress-meta">
+                <span id="generalProgressText">Waiting for training</span>
+                <span id="generalProgressPercent">0%</span>
+              </div>
+              <div class="progress-track">
+                <div id="generalProgress" class="progress-fill"></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <span class="card-kicker">KNOWLEDGE AREAS</span>
+            <div class="knowledge-list">
+              <span>Language & communication</span>
+              <span>Slang & modern language</span>
+              <span>Science</span>
+              <span>Mathematics</span>
+              <span>History</span>
+              <span>Education</span>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <span class="card-kicker">PRIMARY SPECIALISATION</span>
+            <h3>Coding</h3>
+            <p>
+              Coding remains Kylor's main intelligence layer, with general
+              knowledge supporting the things it builds.
+            </p>
+            <div class="specialisation-bar">
+              <span></span>
+            </div>
+          </article>
+
+          <article class="feature-card wide">
+            <div class="card-head">
+              <div>
+                <span class="card-kicker">TRAINING CONTROL</span>
+                <h3>Engine control</h3>
+              </div>
+              <span id="engineState" class="engine-state">STOPPED</span>
+            </div>
+
+            <div class="control-row">
+              <button id="startTraining" class="control primary">Start training</button>
+              <button id="pauseTraining" class="control">Pause</button>
+              <button id="stopTraining" class="control danger">Stop</button>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+
+      <!-- OVERVIEW -->
+      <section class="training-page" data-content="overview">
+
+        <div class="section-heading">
+          <div>
+            <div class="page-kicker">SYSTEM OVERVIEW</div>
+            <h2>Kylor training</h2>
+            <p>Live information from the training engine.</p>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span>Runtime</span>
+            <strong id="overviewRuntime">00:00:00</strong>
+          </div>
+          <div class="stat-card">
+            <span>Completed targets</span>
+            <strong id="overviewCompleted">0</strong>
+          </div>
+          <div class="stat-card">
+            <span>Collected sources</span>
+            <strong id="overviewSources">0</strong>
+          </div>
+          <div class="stat-card">
+            <span>Approved sources</span>
+            <strong id="overviewApproved">0</strong>
+          </div>
+        </div>
+
+        <div class="overview-panel">
+          <span class="card-kicker">ACTIVE SUBJECTS</span>
+          <div id="overviewSubjects" class="subject-list"></div>
+        </div>
+      </section>
+
+
+      <!-- SUBJECTS -->
+      <section class="training-page" data-content="subjects">
+
+        <div class="section-heading">
+          <div>
+            <div class="page-kicker">KNOWLEDGE DOMAINS</div>
+            <h2>Subjects</h2>
+            <p>Subjects currently available to Kylor's training engine.</p>
+          </div>
+        </div>
+
+        <div id="subjectsGrid" class="subjects-grid"></div>
+      </section>
+
+
+      <!-- KNOWLEDGE -->
+      <section class="training-page" data-content="knowledge">
+
+        <div class="section-heading">
+          <div>
+            <div class="page-kicker">LEARNED INFORMATION</div>
+            <h2>Knowledge</h2>
+            <p>Approved knowledge becomes available to Kylor's retrieval layer.</p>
+          </div>
+        </div>
+
+        <div class="knowledge-dashboard">
+          <div class="knowledge-number">
+            <span>Approved sources</span>
+            <strong id="knowledgeApproved">0</strong>
+          </div>
+
+          <div class="knowledge-number">
+            <span>Collected sources</span>
+            <strong id="knowledgeCollected">0</strong>
+          </div>
+
+          <div class="knowledge-number">
+            <span>Completed targets</span>
+            <strong id="knowledgeCompleted">0</strong>
+          </div>
+        </div>
+      </section>
+
+
+      <!-- PROGRESS -->
+      <section class="training-page progress-page" data-content="progress">
+
+        <div class="progress-runtime-zone">
+          <div>
+            <span class="card-kicker">TRAINING RUNTIME</span>
+            <strong id="progressRuntime">00:00:00</strong>
+            <small id="progressState">Stopped</small>
+          </div>
+
+          <div class="runtime-controls">
+            <button id="progressStart">Start</button>
+            <button id="progressPause">Pause</button>
+            <button id="progressStop">Stop</button>
+          </div>
+        </div>
+
+        <div class="progress-stage">
+
+          <div class="progress-info left-info">
+            <span class="card-kicker">CURRENT TARGET</span>
+            <strong id="progressTarget">Waiting for training</strong>
+            <small id="progressTargetMeta">No active target</small>
+          </div>
+
+          <div class="progress-info right-info">
+            <span class="card-kicker">SYSTEM</span>
+            <strong id="progressActive">0 active</strong>
+            <small id="progressStorage">Storage healthy</small>
+          </div>
+
+          <div id="brainGraph" class="brain-graph">
+            <svg id="brainSvg" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid meet">
+
+              <g id="graphWorld">
+
+                <g class="graph-lines">
+
+                  <line class="graph-line" data-branch="coding" x1="600" y1="350" x2="360" y2="190"/>
+                  <line class="graph-line" data-branch="science" x1="600" y1="350" x2="850" y2="190"/>
+                  <line class="graph-line" data-branch="maths" x1="600" y1="350" x2="300" y2="370"/>
+                  <line class="graph-line" data-branch="research" x1="600" y1="350" x2="900" y2="370"/>
+                  <line class="graph-line" data-branch="general" x1="600" y1="350" x2="420" y2="540"/>
+                  <line class="graph-line" data-branch="training" x1="600" y1="350" x2="780" y2="540"/>
+
+                </g>
+
+                <g class="graph-branches">
+
+                  <g class="graph-node" data-node="coding" transform="translate(360 190)">
+                    <circle class="node-ring" r="58"/>
+                    <circle class="node-circle" r="45"/>
+                    <text class="node-symbol" y="8">&lt;/&gt;</text>
+                    <text class="node-label" y="82">CODING</text>
+                  </g>
+
+                  <g class="graph-node" data-node="science" transform="translate(850 190)">
+                    <circle class="node-ring" r="58"/>
+                    <circle class="node-circle" r="45"/>
+                    <text class="node-symbol" y="8">◌</text>
+                    <text class="node-label" y="82">SCIENCE</text>
+                  </g>
+
+                  <g class="graph-node" data-node="maths" transform="translate(300 370)">
+                    <circle class="node-ring" r="58"/>
+                    <circle class="node-circle" r="45"/>
+                    <text class="node-symbol" y="8">∑</text>
+                    <text class="node-label" y="82">MATHS</text>
+                  </g>
+
+                  <g class="graph-node" data-node="research" transform="translate(900 370)">
+                    <circle class="node-ring" r="58"/>
+                    <circle class="node-circle" r="45"/>
+                    <text class="node-symbol" y="8">⌕</text>
+                    <text class="node-label" y="82">RESEARCH</text>
+                  </g>
+
+                  <g class="graph-node" data-node="general" transform="translate(420 540)">
+                    <circle class="node-ring" r="58"/>
+                    <circle class="node-circle" r="45"/>
+                    <text class="node-symbol" y="8">K</text>
+                    <text class="node-label" y="82">GENERAL</text>
+                  </g>
+
+                  <g class="graph-node" data-node="training" transform="translate(780 540)">
+                    <circle class="node-ring" r="58"/>
+                    <circle class="node-circle" r="45"/>
+                    <text class="node-symbol" y="8">⌘</text>
+                    <text class="node-label" y="82">TRAINING</text>
+                  </g>
+
+                </g>
+
+                <g class="core-node" transform="translate(600 350)">
+                  <circle class="core-glow" r="105"/>
+                  <circle class="core-ring" r="88"/>
+                  <circle class="core-circle" r="72"/>
+                  <text class="core-letter" y="14">K</text>
+                  <text class="core-title" y="116">KYLOR</text>
+                </g>
+
+              </g>
+            </svg>
+          </div>
+
+          <div class="graph-tools">
+            <button id="zoomIn" title="Zoom in">+</button>
+            <button id="zoomOut" title="Zoom out">−</button>
+            <button id="zoomReset" title="Reset view">⌂</button>
+            <button id="zoomFullscreen" title="Fullscreen">⛶</button>
+          </div>
+
+          <div class="graph-crosshair"></div>
+
+        </div>
+      </section>
+
+
+      <!-- RUNTIME -->
+      <section class="training-page" data-content="runtime">
+
+        <div class="section-heading">
+          <div>
+            <div class="page-kicker">ENGINE</div>
+            <h2>Runtime</h2>
+            <p>Training engine state and persistence.</p>
+          </div>
+        </div>
+
+        <div class="runtime-dashboard">
+          <div class="runtime-main">
+            <span>Current runtime</span>
+            <strong id="runtimeLarge">00:00:00</strong>
+            <small id="runtimeLargeState">Stopped</small>
+          </div>
+
+          <div class="runtime-actions">
+            <button id="runtimeStart" class="control primary">Start</button>
+            <button id="runtimePause" class="control">Pause</button>
+            <button id="runtimeStop" class="control danger">Stop</button>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </section>
+
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>

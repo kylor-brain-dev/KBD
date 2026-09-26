@@ -1,0 +1,19 @@
+{
+  "id": "136db398e40266dc9322e58155a2f284",
+  "subject": "javascript",
+  "topic": "fundamentals",
+  "title": "6. JavaScript fundamentals - MDN Web Docs",
+  "url": "https://developer.mozilla.org/en-US/curriculum/core/javascript-fundamentals/",
+  "checksum": "253d96570f3157633312d4154e04efcb2bb531d4d0ab25e5da6ea2a45e0974bf",
+  "contentLength": 15453,
+  "stage": "inspected",
+  "createdAt": "2026-09-25T19:27:01.128Z",
+  "updatedAt": "2026-09-25T19:27:01.130Z",
+  "metadata": {
+    "domain": "",
+    "sourceId": null,
+    "targetId": "javascript-fundamentals-1",
+    "discoveredAt": null,
+    "fetchedAt": "2026-09-25T19:27:01.128Z"
+  }
+}
